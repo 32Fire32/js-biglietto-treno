@@ -1,5 +1,12 @@
 'strict mode'
 
+function change(){
+    let testo = document.querySelector(".apologies");
+    testo.style.display = "block";
+    }
+    setTimeout("change();", 10000);
+
+
 // chiedere lunghezza del tragitto
 const traveLenght = Number(prompt("Inserisci la lunghezza del tragitto in Km"));
 //chiedere età
@@ -11,15 +18,20 @@ console.log(traveLenght, userAge, totalPrice);
 if (userAge < 18) {
     totalPriceYoung = totalPrice - ((totalPrice * 20)/100);
     console.log(totalPriceYoung);
-    document.querySelector("h1").innerHTML = totalPriceYoung.toFixed(2); 
+    document.querySelector("span").innerHTML = totalPriceYoung.toFixed(2); 
 } else if (userAge >= 65) {
     totalPriceOld = totalPrice - ((totalPrice * 40)/100);
     console.log(totalPriceOld);
-    document.querySelector("h1").innerHTML = totalPriceOld.toFixed(2); 
+    document.querySelector("span").innerHTML = totalPriceOld.toFixed(2); 
 } else {
     //output 2 cifre decimali
-    document.querySelector("h1").innerHTML = totalPrice.toFixed(2); 
+    document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
 }
+
+
+
+
+
 
 
 
