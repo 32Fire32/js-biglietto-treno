@@ -4,7 +4,13 @@ function change(){
     let testo = document.querySelector(".apologies");
     testo.style.display = "block";
     }
-    setTimeout("change();", 10000);
+    setTimeout("change();", 5000);
+
+function wait(){
+    let testo = document.querySelector(".wait");
+    testo.style.display = "none";
+    }
+    setTimeout("wait();", 5000);
 
 
 // chiedere lunghezza del tragitto
@@ -26,7 +32,7 @@ if (userAge < 18) {
 } else {
     //output 2 cifre decimali
     document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
-}
+} 
 
 
 

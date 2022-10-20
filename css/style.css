@@ -15,7 +15,7 @@ body {
     margin: 1.25rem;
 }
 
-span {
+.price {
     color: red;
 }
 
@@ -32,3 +32,13 @@ h5 {
     margin-top: 12.5rem;
     color: rgb(155, 154, 154);
 }
+
+.wait {
+    animation: wait 1s linear infinite;
+  }
+  
+  @keyframes wait {
+    50% {
+      opacity: 0;
+    }
+  }
