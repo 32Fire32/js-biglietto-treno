@@ -23,16 +23,14 @@ console.log(traveLenght, userAge, totalPrice);
 //se minorenni sconto del 20% se over 65 scontro del 40%
 if (userAge < 18) {
     totalPrice = totalPrice - totalPrice * 0.2;
-    console.log(totalPrice);
-    document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
+    console.log(totalPrice); 
 } else if (userAge >= 65) {
     totalPrice = totalPrice - totalPrice * 0.4;
-    console.log(totalPrice);
-    document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
-} else {
+    console.log(totalPrice); 
+}
     //output 2 cifre decimali
-    document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
-} 
+document.querySelector("span").innerHTML = totalPrice.toFixed(2); 
+
 
 
 
